@@ -7,7 +7,7 @@ function App() {
     <Router><div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path=":id" element={<Movies />}/>
+        <Route path="/movie" element={<Movies />}/>
       </Routes>
 
     </div></Router>
