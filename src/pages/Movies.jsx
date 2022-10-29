@@ -11,14 +11,15 @@ const Movies = () => {
       const { data } = await axios.get(
         `https://www.omdbapi.com/?s=${searchTerm}&apikey=ddf07056`
       );
-      setMovies(data)
+      setMovies(data?.Search)
     }
     fetchMovies();
   }, []);
 
   return (
     <div>
-      {movies.map(movie => <div className="white">{movie.title}</div>)}
+      {movies.map(movie => (<div className="white">{movie.Title}</div>))}
+      <h1 className="white">Hello</h1>
     </div>
   );
 };
