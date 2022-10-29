@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  let navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState();
+
+  function handleClick() {
+    navigate(`/${searchTerm}`)
+  }
+
   return (
     <div>
       <header className="showcase">
         <div className="showcase-top">
           <img src="./Netflix logo.png" alt="" />
-          <a href="#" className="btn btn-rounded no-show">
+          <a className="btn btn-rounded no-show">
             Sign In
           </a>
         </div>
@@ -14,13 +23,36 @@ const Home = () => {
           <h1>See what's next</h1>
           <p>Watch anywhere. Cancel Anytime</p>
           <a href="#" className="btn btn-xl">
-            Watch Free For 30 Days <i className="fas fa-chevron-right btn-icon"></i>
+            Watch Free For 30 Days{" "}
+            <i className="fas fa-chevron-right btn-icon"></i>
           </a>
         </div>
+
         <div className="SearchBar">
-            <input className="input" type="text" placeholder="Titles, people, genres"/>
-            <button className="searchButton"><img className="searchIcon" src="https://static.vecteezy.com/system/resources/previews/000/442/657/non_2x/vector-search-icon.jpg" alt="" /></button>
+          <input
+          value={searchTerm}
+          onChange={(event) => setSearchTerm(event.target.value)}
+          onKeyPress={(event) => { 
+            if (event.key === 'Enter') {
+              handleClick();
+            }
+          }}
+            className="input"
+            type="text"
+            placeholder="Titles, people, genres"
+          />
+          <button 
+          onClick={handleClick}
+          className="searchButton">
+            <img
+              className="searchIcon"
+              src="https://static.vecteezy.com/system/resources/previews/000/442/657/non_2x/vector-search-icon.jpg"
+              alt=""
+            />
+          </button>
         </div>
+
+
       </header>
       <section className="tabs">
         <div className="container">
@@ -47,7 +79,7 @@ const Home = () => {
                   If you decide Internet Flicks isn't for you - no problem. No
                   commitment. Cancel online anytime.
                 </p>
-                <a href="#" className="btn btn-lg">
+                <a className="btn btn-lg">
                   Watch Free For 30 Days
                 </a>
               </div>
@@ -60,7 +92,7 @@ const Home = () => {
                 Watch TV shows and movies anytime, anywhere — personalized for
                 you.
               </p>
-              <a href="#" className="btn btn-lg">
+              <a className="btn btn-lg">
                 Watch Free For 30 Days
               </a>
             </div>
@@ -72,61 +104,61 @@ const Home = () => {
         <div className="footer-cols">
           <ul>
             <li>
-              <a href="#">FAQ</a>
+              <a>FAQ</a>
             </li>
             <li>
-              <a href="#">Investor Relations</a>
+              <a>Investor Relations</a>
             </li>
             <li>
-              <a href="#">Ways To Watch</a>
+              <a>Ways To Watch</a>
             </li>
             <li>
-              <a href="#">Corporate Information</a>
+              <a>Corporate Information</a>
             </li>
             <li>
-              <a href="#">Internet Flicks Originals</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">Help Center</a>
-            </li>
-            <li>
-              <a href="#">Jobs</a>
-            </li>
-            <li>
-              <a href="#">Terms Of Use</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
+              <a>Internet Flicks Originals</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Account</a>
+              <a>Help Center</a>
             </li>
             <li>
-              <a href="#">Redeem Gift Cards</a>
+              <a>Jobs</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a>Terms Of Use</a>
             </li>
             <li>
-              <a href="#">Speed Test</a>
+              <a>Contact Us</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Media Center</a>
+              <a>Account</a>
             </li>
             <li>
-              <a href="#">Buy Gift Cards</a>
+              <a>Redeem Gift Cards</a>
             </li>
             <li>
-              <a href="#">Cookie Preferences</a>
+              <a>Privacy</a>
             </li>
             <li>
-              <a href="#">Legal Notices</a>
+              <a>Speed Test</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a>Media Center</a>
+            </li>
+            <li>
+              <a>Buy Gift Cards</a>
+            </li>
+            <li>
+              <a>Cookie Preferences</a>
+            </li>
+            <li>
+              <a>Legal Notices</a>
             </li>
           </ul>
         </div>
