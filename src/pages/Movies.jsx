@@ -29,7 +29,7 @@ const Movies = () => {
     <>
       <div className="SearchBar">
         <Link to="/">
-          <button>Back</button>
+          <button className="btn btn-rounded back-button">Back</button>
         </Link>
         <input
           className="input"

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -14,13 +13,13 @@ const Home = () => {
     <div>
       <header className="showcase">
         <div className="showcase-top">
-          <img src="./Netflix logo.png" alt="" />
+          <img src="./Internetflickslogo.png" alt="" />
           <a className="btn btn-rounded no-show">
             Sign In
           </a>
         </div>
         <div className="showcase-content">
-          <h1>See what's next</h1>
+          <h1>Unlimited movies, TV shows, and more.</h1>
           <p>Watch anywhere. Cancel Anytime</p>
           <a href="#" className="btn btn-xl">
             Watch Free For 30 Days{" "}
@@ -83,7 +82,7 @@ const Home = () => {
                   Watch Free For 30 Days
                 </a>
               </div>
-              <img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
+              <img src="https://www.howtogeek.com/wp-content/uploads/2020/03/netflix-cancel-account-cancel-membership.png?trim=1,1&bg-color=000&pad=1,1" alt="" />
             </div>
           </div>
           <div id="tab-2-content" className="tab-content-item">
@@ -100,7 +99,7 @@ const Home = () => {
         </div>
       </section>
       <footer className="footer">
-        <p>Questions? Call 1-866-579-7172</p>
+        <p>Questions? Call 1-407-955-7944</p>
         <div className="footer-cols">
           <ul>
             <li>
