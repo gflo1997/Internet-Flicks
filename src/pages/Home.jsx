@@ -44,7 +44,7 @@ const Home = () => {
             <div class="tab-1-content-inner">
               <div>
                 <p class="text-lg">
-                  If you decide Netflix isn't for you - no problem. No
+                  If you decide Internet Flicks isn't for you - no problem. No
                   commitment. Cancel online anytime.
                 </p>
                 <a href="#" class="btn btn-lg">
@@ -84,7 +84,7 @@ const Home = () => {
               <a href="#">Corporate Information</a>
             </li>
             <li>
-              <a href="#">Netflix Originals</a>
+              <a href="#">Internet Flicks Originals</a>
             </li>
           </ul>
           <ul>

@@ -207,6 +207,7 @@ img {
     width: 30px;
     left: 8px;
     top: 50%;
+    cursor: pointer;
 }
 
 .footer {
