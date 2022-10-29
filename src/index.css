@@ -7,6 +7,10 @@ body {
   color: #999;
 }
 
+.white {
+  color: white;
+}
+
 ul {
   list-style: none;
 }

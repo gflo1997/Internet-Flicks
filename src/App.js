@@ -7,7 +7,7 @@ function App() {
     <Router><div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/movie" element={<Movies />}/>
+        <Route path=":searchTerm" element={<Movies />}/>
       </Routes>
 
     </div></Router>
