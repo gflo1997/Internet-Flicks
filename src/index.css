@@ -449,11 +449,21 @@ img {
     position: relative;
     display: none;
   }
-}
-
-@media (max-height: 600px) {
-  .showcase-content {
-    margin-top: 3rem;
+  .tabs {
+    margin-top: 70px;
+  }
+  .input-small {
+    padding: 10px 60px;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .movie-container {
+    text-align: center;
+  }
+  .input-small-movies {
+    padding: 10px 30px;
   }
 }
 
