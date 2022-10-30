@@ -32,7 +32,7 @@ const Movies = () => {
           <button className="btn btn-rounded">Back</button>
         </Link>
         <input
-          className="input"
+          className="input input-small-movies"
           type="text"
           placeholder="Titles, people, genres"
           value={searchTerm}

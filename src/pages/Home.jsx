@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <header className="showcase">
         <div className="showcase-top">
-          <img src="./Internetflickslogo.png" alt="" />
+          <img className="logo-small" src="./Internetflickslogo.png" alt="" />
           <a className="btn btn-rounded no-show">
             Sign In
           </a>
@@ -36,7 +36,7 @@ const Home = () => {
               handleClick();
             }
           }}
-            className="input"
+            className="input input-small"
             type="text"
             placeholder="Titles, people, genres"
           />

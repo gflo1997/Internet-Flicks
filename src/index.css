@@ -456,3 +456,28 @@ img {
     margin-top: 3rem;
   }
 }
+
+@media (max-width: 400px) {
+  .logo-small {
+    text-align: center;
+    max-width: 350px;
+  }
+  
+  .tabs {
+    margin-top: 70px;
+  }
+
+  .input-small {
+    padding: 10px 60px;
+  }
+  .input-small-movies {
+    padding: 10px 30px;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .movie-container {
+    text-align: center;
+  }
+}
