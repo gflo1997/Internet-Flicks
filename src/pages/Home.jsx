@@ -9,12 +9,16 @@ const Home = () => {
     navigate(`/${searchTerm}`)
   }
 
+  function handleSignInClick() {
+    alert('Option not available :(  Please search a movie!');
+  }
+
   return (
     <div>
       <header className="showcase">
         <div className="showcase-top">
           <img className="logo-small" src="./Internetflickslogo.png" alt="" />
-          <a className="btn btn-rounded no-show">
+          <a onClick={handleSignInClick} className="btn btn-rounded no-show">
             Sign In
           </a>
         </div>
