@@ -103,7 +103,7 @@ const Home = () => {
         </div>
       </section>
       <footer className="footer">
-        <p>Questions? Call 1-407-955-7944</p>
+        <p>Questions? Call 1-407-875-7885</p>
         <div className="footer-cols">
           <ul>
             <li>
